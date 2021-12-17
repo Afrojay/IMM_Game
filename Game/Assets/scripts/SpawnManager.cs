@@ -6,10 +6,16 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] objectPrefabs;
     public GameObject[] pickUpPrefabs;
+    private float spawnRangeX = 10;
+    private float spawnPosZ = -5;
+    private float startDelay = 3;
+    private float spawnInterval = 1f;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        InvokeRepeating("SpawnObstacles", startDelay, spawnInterval);
     }
 
     // Update is called once per frame
@@ -17,15 +23,28 @@ public class SpawnManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
-            int objectIndex = Random.Range(0, objectPrefabs.Length);
-            Instantiate(objectPrefabs[objectIndex], new Vector3(2, 13, -4),
-                objectPrefabs[objectIndex].transform.rotation);
+            SpawnObstacles();
+            SpawnPickUps();
         }
         if (Input.GetKeyDown(KeyCode.G))
         {
-            int pickUpIndex = Random.Range(0, pickUpPrefabs.Length);
-            Instantiate(pickUpPrefabs[pickUpIndex], new Vector3(2, 13, -4),
-                pickUpPrefabs[pickUpIndex].transform.rotation);
+
         }
+    }
+
+    void SpawnObstacles()
+    {
+        int objectIndex = Random.Range(0, objectPrefabs.Length);
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 13, spawnPosZ);
+        Instantiate(objectPrefabs[objectIndex], spawnPos,
+            objectPrefabs[objectIndex].transform.rotation);
+    }
+
+    void SpawnPickUps()
+    {
+        int pickUpIndex = Random.Range(0, pickUpPrefabs.Length);
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 13, spawnPosZ);
+        Instantiate(pickUpPrefabs[pickUpIndex], spawnPos,
+            pickUpPrefabs[pickUpIndex].transform.rotation);
     }
 }
