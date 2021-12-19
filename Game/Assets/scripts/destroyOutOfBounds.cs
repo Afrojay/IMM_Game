@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class destroyOutOfBounds : MonoBehaviour
 {
-    private float bottomBound = 1;
+    private float bottomBound = 1f;
     // Start is called before the first frame update
     void Start()
     {
