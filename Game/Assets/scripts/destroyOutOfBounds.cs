@@ -18,7 +18,7 @@ public class destroyOutOfBounds : MonoBehaviour
     {
         if(transform.position.y < bottomBound)
         {
-            // ScoreKeep.scoreVal += 10;
+           ScoreKeep.score += 10;
             Destroy(gameObject);
             
         }

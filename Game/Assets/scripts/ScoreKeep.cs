@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class ScoreKeep : MonoBehaviour
 {
-    private float clock;
-    private int score;
+    //private float clock;
+    public static int score;
     public TextMeshProUGUI scoreText;
 
     // Start is called before the first frame update
@@ -20,12 +20,8 @@ public class ScoreKeep : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        clock += Time.deltaTime;
-        
-        if (clock > 1f)
-        {
-            score += 5;
-            scoreText.text = score.ToString();
-        }
+        score += 1;
+            scoreText.text = "Score: " + score.ToString();
+
     }
 }

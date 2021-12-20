@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3900675344686572478}
   - component: {fileID: -6018272500345090409}
   - component: {fileID: -2954668822207823272}
+  - component: {fileID: -8159857840761860675}
   m_Layer: 0
   m_Name: Cube
   m_TagString: obstacle
@@ -141,7 +142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af956e44403e6704998d60c1938a17b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
 --- !u!114 &-2954668822207823272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,5 +152,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59100d8e68bd9264e8a0e4044f0a5bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-8159857840761860675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6171295133675499077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82a4c0c0e326caf419b8e824995fbb43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -16,6 +16,7 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SpawnObstacles", startDelay, spawnInterval);
+        InvokeRepeating("SpawnPickUps", startDelay, spawnInterval + 3f );
     }
 
     // Update is called once per frame

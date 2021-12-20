@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6152472339256150170}
   - component: {fileID: 2756990310017227233}
   - component: {fileID: 3979487378577893258}
+  - component: {fileID: -3269984832113321181}
   m_Layer: 0
   m_Name: Christmas_Ball_10
   m_TagString: Untagged
@@ -98,7 +99,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: b7cbcbb2e87001d4dbe438244b1180d3, type: 3}
 --- !u!114 &6423832120936324448
@@ -155,3 +156,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!114 &-3269984832113321181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4150947654232893412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63b3e7e47ea80c24e8ca9cf50b4e1b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionCount: 0

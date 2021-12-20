@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6566189076479731049}
   - component: {fileID: 1168528104064864068}
   - component: {fileID: 4445950928230497954}
+  - component: {fileID: 4366421326766769134}
   m_Layer: 0
   m_Name: Present_Box_Color_41
   m_TagString: Untagged
@@ -97,7 +98,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 13d78f52b0946d04f87ed864c75850f2, type: 3}
 --- !u!114 &6566189076479731049
@@ -141,3 +142,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4366421326766769134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7574705214703145193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63b3e7e47ea80c24e8ca9cf50b4e1b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionCount: 0
